@@ -37,7 +37,7 @@ date = datetime(year=2022, month=3, day=23)
 # today = datetime.now()
 pixel_creation_data = {
     "date": date.strftime("%Y%m%d"),
-    "quantity": input("How many kilometres did cycle today: ")
+    "quantity": input("How many kilometres did you cycle today: ")
 
 }
 post_response = requests.post(url=pixel_creation_endpoint, json=pixel_creation_data, headers=headers)
