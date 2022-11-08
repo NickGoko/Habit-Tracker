@@ -47,7 +47,7 @@ today = datetime.now()
 pixel_update_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{today.strftime('%Y%m%d')}"
 
 pixel_edit_data = {
-    "quantity": input("How many kilometres did you walk today: "),
+    "quantity": input("How many kms did you walk today: "),
 
 }
 put_response = requests.put(url=pixel_update_endpoint, json=pixel_edit_data, headers=headers)
